@@ -706,6 +706,7 @@ Py_RunMain(void)
 static int
 pymain_main(_PyArgv *args)
 {
+    printf("Kanishk's Version of Cpython \n");
     PyStatus status = pymain_init(args);
     if (_PyStatus_IS_EXIT(status)) {
         pymain_free();
